@@ -15,6 +15,7 @@ ingredients.forEach(
     const itemLi = document.createElement('li');
     itemLi.className = "item";
     itemLi.textContent = ingredient;
+    
     ingredientsAll.append(itemLi);
     console.log(itemLi);
   }
