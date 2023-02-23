@@ -5,7 +5,8 @@ const getTotalitem = (array) => {
 
     array.forEach(item => {
         total += 1;
-    })  return total;
+    })
+    return total;
 };
 
 console.log(`Number of categories: ${getTotalitem(itemAll)}`)
