@@ -12,3 +12,22 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const imagesList = document.querySelector('.gallery')
+console.log(imagesList);
+
+const createImagesList = 
+  ({ url, alt }) => 
+    `<li class='gallry-item'>
+    <a href="#">
+    <img src="${url}"
+    alt="${alt}">
+    </a>
+    </li>`;
+  
+
+const markup = images.map((data) => {
+  createImagesList(data)
+});
+console.log(markup);
+// imagesList.map
