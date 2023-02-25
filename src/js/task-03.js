@@ -16,17 +16,15 @@ const images = [
 const imagesList = document.querySelector('.gallery')
 console.log(imagesList);
 
-const createImagesList = 
-  ({ url, alt }) => 
+const createImagesList = ({ url, alt, }) => 
     `<li class='gallry-item'>
     <a href="#">
-    <img src="${url}"
-    alt="${alt}">
+    <img src="${url}" alt="${alt}">
     </a>
     </li>`;
-  
-const markup = images.map((data) => {
-  createImagesList(data)
-});
+
+const markup = images.map((data) => createImagesList(data)).join("");
 console.log(markup);
-// imagesList.map
+
+imagesList.insertAdjacentHTML('afterbegin', markup);
+
