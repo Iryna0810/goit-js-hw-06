@@ -25,7 +25,6 @@ const createImagesList =
     </a>
     </li>`;
   
-
 const markup = images.map((data) => {
   createImagesList(data)
 });
