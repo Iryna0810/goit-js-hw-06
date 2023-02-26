@@ -17,7 +17,7 @@ const imagesList = document.querySelector('.gallery')
 console.log(imagesList);
 
 const createImagesList = ({ url, alt, }) => 
-    `<li class='gallry-item'>
+    `<li class='gallery-item'>
     <a href="#">
     <img src="${url}" alt="${alt}">
     </a>
@@ -28,3 +28,4 @@ console.log(markup);
 
 imagesList.insertAdjacentHTML('afterbegin', markup);
 
+imagesList.style.display = 'flex';
