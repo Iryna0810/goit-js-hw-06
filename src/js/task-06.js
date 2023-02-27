@@ -5,13 +5,13 @@ console.log(lengthControl);
 input.addEventListener('blur', handlerInputSymbol);
 
 function handlerInputSymbol(event) {
-    input.classList.add('valid')
+    // input.classList.add('valid')
     console.log(event.currentTarget.textContent);
-    if (event.currentTarget.textContent.length < lengthControl) {
-        input.classList.remove('valid');
+    input.textContent = event.currentTarget.value;
+    if (input.textContent.length < lengthControl) {
         input.classList.add('invalid');
-        
-    };
+        } else input.classList.add('valid');
 }
+
 
 
