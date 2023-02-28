@@ -1,6 +1,6 @@
 const itemAll = document.querySelectorAll('.item');
 
-const getTotalitem = (array) => {
+const getTotalitem = array => {
     let total = 0;
 
     array.forEach(item => {
